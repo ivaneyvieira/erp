@@ -1,7 +1,0 @@
-@startuml
-
-Estado "1" *-- "many" Regiao : contains
-
-Cidade "1" *-- "many" Estado : contains
-
-@enduml

@@ -1,0 +1,17 @@
+@startuml
+class Regiao {
+    CharField nome
+    Charfield sigla
+}
+
+class Estado {
+    CharField nome
+    Charfield sigla
+    Regiao regiao
+}
+
+
+Estado "1" *-- "0..1" Regiao
+Cidade "1" *-- "0..1" Estado
+
+@enduml
