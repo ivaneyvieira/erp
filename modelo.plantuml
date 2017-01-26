@@ -1,17 +1,49 @@
 @startuml
-class Regiao {
-    CharField nome
-    Charfield sigla
+package util {
+    class Regiao {
+        CharField nome
+        Charfield sigla
+    }
+
+    class Estado {
+        CharField nome
+        Charfield sigla
+        Regiao regiao
+    }
+
+    class Cidade {
+        CharField nome
+        Charfield ddd
+        Estado regiao
+    }
+
+    Estado  *-- Regiao
+    Cidade  *- Estado 
 }
 
-class Estado {
-    CharField nome
-    Charfield sigla
-    Regiao regiao
+package estoque {
+    class Produto
+    class Marca
+    class Fabricante
+    
+    Produto *- Marca  
+    Marca *- Fabricante
+    Fabricante *- Cidade
 }
 
+package compra {
+    class PedidoCompra
+    class ItemCompra
 
-Estado "1" *-- "0..1" Regiao
-Cidade "1" *-- "0..1" Estado
+    ItemCompra *- PedidoCompra
+    ItemCompra *- Produto
+}
 
+package venda {
+    class PedidoVenda
+    class ItemVenda
+
+    ItemVenda *- PedidoVenda
+    ItemVenda *- Produto
+}
 @enduml
