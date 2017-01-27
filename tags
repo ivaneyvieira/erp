@@ -11,12 +11,14 @@ APP_DIR	erp/settings.py	/^APP_DIR  = os.path.join(BASE_DIR, "apps")$/;"	kind:var
 AUTH_PASSWORD_VALIDATORS	erp/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:95
 AppConfig	apps/util/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 BASE_DIR	erp/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Cidade	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
 Cidade	apps/util/models.py	/^class Cidade(models.Model):$/;"	kind:class	line:21
+Cidade	apps/util/views.py	/^from . models import Cidade$/;"	kind:namespace	line:3
 DATABASES	erp/settings.py	/^DATABASES = {$/;"	kind:variable	line:84
 DEBUG	erp/settings.py	/^DEBUG = True$/;"	kind:variable	line:28
 DJANGO_APPS	erp/settings.py	/^DJANGO_APPS = [$/;"	kind:variable	line:35
 ERP_APPS	erp/settings.py	/^ERP_APPS =[$/;"	kind:variable	line:44
-Estado	apps/util/admin.py	/^from . models import Regiao, Estado$/;"	kind:namespace	line:2
+Estado	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
 Estado	apps/util/models.py	/^class Estado(models.Model):$/;"	kind:class	line:12
 INSTALLED_APPS	erp/settings.py	/^INSTALLED_APPS = ERP_APPS + DJANGO_APPS$/;"	kind:variable	line:48
 LANGUAGE_CODE	erp/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:114
@@ -24,7 +26,7 @@ MIDDLEWARE	erp/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:50
 Migration	apps/util/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
 Migration	apps/util/migrations/0002_cidade.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
 ROOT_URLCONF	erp/settings.py	/^ROOT_URLCONF = 'erp.urls'$/;"	kind:variable	line:60
-Regiao	apps/util/admin.py	/^from . models import Regiao, Estado$/;"	kind:namespace	line:2
+Regiao	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
 Regiao	apps/util/models.py	/^class Regiao(models.Model):$/;"	kind:class	line:4
 STATIC_URL	erp/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:128
 TEMPLATES	erp/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:62
@@ -61,6 +63,7 @@ field	apps/util/migrations/0001_initial.py	/^            field=models.ForeignKey
 fields	apps/util/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
 fields	apps/util/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:27
 fields	apps/util/migrations/0002_cidade.py	/^            fields=[$/;"	kind:variable	line:18
+findAllCidades	apps/util/views.py	/^def findAllCidades():$/;"	kind:function	line:6
 get_wsgi_application	erp/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
 initial	apps/util/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
 manage.py	manage.py	1;"	kind:file	line:1

@@ -1,4 +1,5 @@
 @startuml
+skinparam handwritten true
 package util {
     class Regiao {
         CharField nome
