@@ -43,6 +43,7 @@ DJANGO_APPS = [
 
 ERP_APPS =[
     'util.apps.UtilConfig',
+    'estoque.apps.EstoqueConfig'
 ]
 
 INSTALLED_APPS = ERP_APPS + DJANGO_APPS
