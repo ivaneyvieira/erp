@@ -11,6 +11,8 @@ package util {
         Regiao regiao
     }
 
+
+
     class Cidade {
         CharField nome
         Charfield ddd
