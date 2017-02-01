@@ -1,5 +1,4 @@
 @startuml
-skinparam handwritten true
 package util {
     class Regiao {
         CharField nome
@@ -23,11 +22,14 @@ package util {
 }
 
 package estoque {
+    class Categoria {
+        CharField nome
+    }
     class Produto{
         CharField codigo
         CharField nome
-        FloatField valor
         Marca marca
+        Categoria categoria
     }
 
     class Marca{
@@ -42,6 +44,7 @@ package estoque {
     }
     
     Produto *-- Marca  
+    Produto *-- Categoria  
     Marca *-- Fabricante
     Fabricante *- Cidade
 }
