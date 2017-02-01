@@ -59,12 +59,14 @@ package estoque {
     class Estoque {
         Lote lote
         FloatField quantidade
+        Prateleira prateleira
 
         adcionar(quant)
         subtrair(quant)
     }
 
-    Estoque *- Produto    
+    Estoque *- Lote   
+    Estoque *-- Prateleira 
     Produto *-- Marca  
     Lote *- Produto
     Prateleira *-- Categoria
