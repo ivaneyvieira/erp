@@ -17,7 +17,7 @@ class Estado(models.Model):
     nome = models.CharField(max_length=20)
     sigla = models.CharField(max_length=2, unique=True)
     regiao = models.ForeignKey(Regiao, on_delete=models.CASCADE)
-
+    icms   = models.IntegerField
     def __str__(self):
         return "{sg} - {nm}".format(sg=self.sigla, nm=self.nome)
     class Meta:
