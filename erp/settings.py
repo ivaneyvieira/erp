@@ -92,6 +92,18 @@ DATABASES = {
 }
 
 
+DATABASES = {
+    'default': {
+        'NAME': 'erp',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'root',
+        'PASSWORD': 'olhaeu01',
+        'OPTIONS': {
+          'autocommit': True,
+        },
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 

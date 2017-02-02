@@ -11,12 +11,13 @@
 0003_auto_20170130_2238.py	apps/util/migrations/0003_auto_20170130_2238.py	1;"	kind:file	line:1
 ALLOWED_HOSTS	erp/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:30
 APP_DIR	erp/settings.py	/^APP_DIR  = os.path.join(BASE_DIR, "apps")$/;"	kind:variable	line:17
-AUTH_PASSWORD_VALIDATORS	erp/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:96
+AUTH_PASSWORD_VALIDATORS	erp/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:98
 AdminCidade	apps/util/admin.py	/^class AdminCidade(admin.ModelAdmin):$/;"	kind:class	line:22
 AdminEstado	apps/util/admin.py	/^class AdminEstado(admin.ModelAdmin):$/;"	kind:class	line:16
 AdminRegiao	apps/util/admin.py	/^class AdminRegiao(admin.ModelAdmin):$/;"	kind:class	line:27
 AppConfig	apps/estoque/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 AppConfig	apps/util/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	teste/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 BASE_DIR	erp/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
 Categoria	apps/estoque/admin.py	/^from . models import Fabricante, Marca, Produto, Categoria$/;"	kind:namespace	line:2
 Categoria	apps/estoque/models.py	/^class Categoria(models.Model):$/;"	kind:class	line:6
@@ -25,7 +26,7 @@ Cidade	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind
 Cidade	apps/util/models.py	/^class Cidade(models.Model):$/;"	kind:class	line:27
 Cidade	apps/util/views.py	/^from . models import Cidade$/;"	kind:namespace	line:3
 CidadeInline	apps/util/admin.py	/^class CidadeInline(admin.TabularInline):$/;"	kind:class	line:11
-DATABASES	erp/settings.py	/^DATABASES = {$/;"	kind:variable	line:85
+DATABASES	erp/settings.py	/^DATABASES = {$/;"	kind:variable	line:87
 DEBUG	erp/settings.py	/^DEBUG = True$/;"	kind:variable	line:28
 DJANGO_APPS	erp/settings.py	/^DJANGO_APPS = [$/;"	kind:variable	line:35
 ERP_APPS	erp/settings.py	/^ERP_APPS =[$/;"	kind:variable	line:44
@@ -37,9 +38,9 @@ Fabricante	apps/estoque/admin.py	/^from . models import Fabricante, Marca, Produ
 Fabricante	apps/estoque/models.py	/^class Fabricante(models.Model):$/;"	kind:class	line:15
 FabricanteAdmin	apps/estoque/admin.py	/^class FabricanteAdmin(admin.ModelAdmin):$/;"	kind:class	line:18
 FabricanteInline	apps/estoque/admin.py	/^class FabricanteInline(admin.TabularInline):$/;"	kind:class	line:7
-INSTALLED_APPS	erp/settings.py	/^INSTALLED_APPS = ERP_APPS + DJANGO_APPS$/;"	kind:variable	line:49
-LANGUAGE_CODE	erp/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:115
-MIDDLEWARE	erp/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:51
+INSTALLED_APPS	erp/settings.py	/^INSTALLED_APPS = ERP_APPS + DJANGO_APPS$/;"	kind:variable	line:51
+LANGUAGE_CODE	erp/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:117
+MIDDLEWARE	erp/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:53
 Marca	apps/estoque/admin.py	/^from . models import Fabricante, Marca, Produto, Categoria$/;"	kind:namespace	line:2
 Marca	apps/estoque/models.py	/^class Marca(models.Model):$/;"	kind:class	line:30
 MarcaAdmin	apps/estoque/admin.py	/^class MarcaAdmin(admin.ModelAdmin):$/;"	kind:class	line:14
@@ -60,24 +61,28 @@ Produto	apps/estoque/admin.py	/^from . models import Fabricante, Marca, Produto,
 Produto	apps/estoque/models.py	/^class Produto(models.Model):$/;"	kind:class	line:43
 ProdutoAdmin	apps/estoque/admin.py	/^class ProdutoAdmin(admin.ModelAdmin):$/;"	kind:class	line:22
 ProdutoInline	apps/estoque/admin.py	/^class ProdutoInline(admin.TabularInline):$/;"	kind:class	line:10
-ROOT_URLCONF	erp/settings.py	/^ROOT_URLCONF = 'erp.urls'$/;"	kind:variable	line:61
+ROOT_URLCONF	erp/settings.py	/^ROOT_URLCONF = 'erp.urls'$/;"	kind:variable	line:63
 Regiao	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
 Regiao	apps/util/models.py	/^class Regiao(models.Model):$/;"	kind:class	line:4
-STATIC_URL	erp/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:129
-TEMPLATES	erp/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:63
-TIME_ZONE	erp/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:117
+STATIC_URL	erp/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:131
+TEMPLATES	erp/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:65
+TIME_ZONE	erp/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:119
 TestCase	apps/estoque/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TestCase	apps/util/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
-USE_I18N	erp/settings.py	/^USE_I18N = True$/;"	kind:variable	line:119
-USE_L10N	erp/settings.py	/^USE_L10N = True$/;"	kind:variable	line:121
-USE_TZ	erp/settings.py	/^USE_TZ = True$/;"	kind:variable	line:123
+TestCase	teste/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TesteConfig	teste/apps.py	/^class TesteConfig(AppConfig):$/;"	kind:class	line:4
+USE_I18N	erp/settings.py	/^USE_I18N = True$/;"	kind:variable	line:121
+USE_L10N	erp/settings.py	/^USE_L10N = True$/;"	kind:variable	line:123
+USE_TZ	erp/settings.py	/^USE_TZ = True$/;"	kind:variable	line:125
 UtilConfig	apps/util/apps.py	/^class UtilConfig(AppConfig):$/;"	kind:class	line:4
-WSGI_APPLICATION	erp/settings.py	/^WSGI_APPLICATION = 'erp.wsgi.application'$/;"	kind:variable	line:79
+WSGI_APPLICATION	erp/settings.py	/^WSGI_APPLICATION = 'erp.wsgi.application'$/;"	kind:variable	line:81
 __init__.py	apps/estoque/__init__.py	1;"	kind:file	line:1
 __init__.py	apps/estoque/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	apps/util/__init__.py	1;"	kind:file	line:1
 __init__.py	apps/util/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	erp/__init__.py	1;"	kind:file	line:1
+__init__.py	teste/__init__.py	1;"	kind:file	line:1
+__init__.py	teste/migrations/__init__.py	1;"	kind:file	line:1
 __str__	apps/estoque/models.py	/^    def __str__(self):$/;"	kind:member	line:12
 __str__	apps/estoque/models.py	/^    def __str__(self):$/;"	kind:member	line:26
 __str__	apps/estoque/models.py	/^    def __str__(self):$/;"	kind:member	line:40
@@ -88,11 +93,14 @@ __str__	apps/util/models.py	/^    def __str__(self):$/;"	kind:member	line:8
 admin	apps/estoque/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	apps/util/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	erp/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin	teste/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin.py	apps/estoque/admin.py	1;"	kind:file	line:1
 admin.py	apps/util/admin.py	1;"	kind:file	line:1
+admin.py	teste/admin.py	1;"	kind:file	line:1
 application	erp/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
 apps.py	apps/estoque/apps.py	1;"	kind:file	line:1
 apps.py	apps/util/apps.py	1;"	kind:file	line:1
+apps.py	teste/apps.py	1;"	kind:file	line:1
 categoria	apps/estoque/models.py	/^    categoria = models.ForeignKey(Categoria)$/;"	kind:variable	line:47
 cidade	apps/estoque/models.py	/^    cidade = models.ForeignKey(Cidade)$/;"	kind:variable	line:19
 cnpj	apps/estoque/models.py	/^    cnpj = models.CharField(max_length=14, unique=True)$/;"	kind:variable	line:17
@@ -135,6 +143,7 @@ fields	apps/util/migrations/0001_initial.py	/^            fields=[$/;"	kind:vari
 fields	apps/util/migrations/0002_cidade.py	/^            fields=[$/;"	kind:variable	line:18
 findAllCidades	apps/util/views.py	/^def findAllCidades():$/;"	kind:function	line:6
 get_wsgi_application	erp/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+icms	apps/util/models.py	/^    icms   = models.IntegerField$/;"	kind:variable	line:20
 initial	apps/estoque/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
 initial	apps/util/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
 inlines	apps/estoque/admin.py	/^    inlines = [MarcaInline]$/;"	kind:variable	line:20
@@ -178,8 +187,10 @@ models	apps/util/migrations/0002_cidade.py	/^from django.db import migrations, m
 models	apps/util/migrations/0002_cidade.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
 models	apps/util/migrations/0003_auto_20170130_2238.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	apps/util/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	teste/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models.py	apps/estoque/models.py	1;"	kind:file	line:1
 models.py	apps/util/models.py	1;"	kind:file	line:1
+models.py	teste/models.py	1;"	kind:file	line:1
 name	apps/estoque/apps.py	/^    name = 'estoque'$/;"	kind:variable	line:5
 name	apps/estoque/migrations/0001_initial.py	/^            name='Fabricante',$/;"	kind:variable	line:19
 name	apps/estoque/migrations/0001_initial.py	/^            name='Marca',$/;"	kind:variable	line:33
@@ -197,6 +208,7 @@ name	apps/util/migrations/0003_auto_20170130_2238.py	/^            name='estado'
 name	apps/util/migrations/0003_auto_20170130_2238.py	/^            name='nome',$/;"	kind:variable	line:29
 name	apps/util/migrations/0003_auto_20170130_2238.py	/^            name='regiao',$/;"	kind:variable	line:24
 name	apps/util/migrations/0003_auto_20170130_2238.py	/^            name='sigla',$/;"	kind:variable	line:34
+name	teste/apps.py	/^    name = 'teste'$/;"	kind:variable	line:5
 nome	apps/estoque/models.py	/^    nome = models.CharField(max_length=64)$/;"	kind:variable	line:16
 nome	apps/estoque/models.py	/^    nome = models.CharField(max_length=64)$/;"	kind:variable	line:31
 nome	apps/estoque/models.py	/^    nome = models.CharField(max_length=64)$/;"	kind:variable	line:45
@@ -223,6 +235,7 @@ preserve_default	apps/estoque/migrations/0002_auto_20170131_0006.py	/^          
 regiao	apps/util/models.py	/^    regiao = models.ForeignKey(Regiao, on_delete=models.CASCADE)$/;"	kind:variable	line:19
 render	apps/estoque/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
 render	apps/util/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	teste/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
 settings.py	erp/settings.py	1;"	kind:file	line:1
 sigla	apps/util/models.py	/^    sigla = models.CharField(max_length=2, unique=True)$/;"	kind:variable	line:18
 sigla	apps/util/models.py	/^    sigla = models.CharField(max_length=2, unique=True, verbose_name = "Sigla", help_text="Sigla do estado")$/;"	kind:variable	line:6
@@ -230,6 +243,7 @@ sys	erp/settings.py	/^import os, sys$/;"	kind:namespace	line:13
 sys	manage.py	/^import sys$/;"	kind:namespace	line:3
 tests.py	apps/estoque/tests.py	1;"	kind:file	line:1
 tests.py	apps/util/tests.py	1;"	kind:file	line:1
+tests.py	teste/tests.py	1;"	kind:file	line:1
 unicode_literals	apps/estoque/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	apps/estoque/migrations/0002_auto_20170131_0006.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	apps/util/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
@@ -257,4 +271,5 @@ verbose_name_plural	apps/util/models.py	/^        verbose_name_plural = "Estados
 verbose_name_plural	apps/util/models.py	/^        verbose_name_plural = "Regiões"$/;"	kind:variable	line:13
 views.py	apps/estoque/views.py	1;"	kind:file	line:1
 views.py	apps/util/views.py	1;"	kind:file	line:1
+views.py	teste/views.py	1;"	kind:file	line:1
 wsgi.py	erp/wsgi.py	1;"	kind:file	line:1
