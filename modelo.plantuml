@@ -24,6 +24,25 @@ package util {
 }
 
 package estoque {
+    class Estoque {
+        Lote lote
+        DecimalFIeld quantidade
+        Prateleira prateleira
+        def acionar(quant)
+        def subtrair(quant)
+    }
+
+    class Lote {
+        CharField codigo
+        DataField data_validade
+        Produto produto
+    }
+
+    class Prateleira {
+        CharField codigo
+        Categoria categoria
+    }
+
     class Categoria {
         CharField nome
     }
@@ -46,15 +65,16 @@ package estoque {
         Cidade cidade
     }
 
-    class CentroLucro
-    
-    Produto *--CentroLucro
+    Estoque *- Lote
+    Estoque *-- Prateleira
+    Lote *- Produto
+    Prateleira *-- Categoria
     Produto *-- Marca  
-    Produto *- Categoria  
+    Produto *-- Categoria  
     Marca *-- Fabricante
     Fabricante *- Cidade
 }
-
+/'
 package compra {
     class PedidoCompra{
         CharField numero
@@ -117,5 +137,5 @@ package venda {
     PedidoVenda *-- Cliente
     PedidoVenda *-- Vendedor
     Cliente *- Cidade
-}
+}'/
 @enduml
