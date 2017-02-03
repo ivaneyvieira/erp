@@ -27,16 +27,6 @@ package estoque {
     class Categoria {
         CharField nome
     }
-    class Prateleira{
-        CharField codigo
-        Catergoria categoria
-    }
-
-    class Lote {
-        CharField codigo
-        DateField data_validade
-        Produto produto
-    }
 
     class Produto{
         CharField codigo
@@ -56,21 +46,11 @@ package estoque {
         Cidade cidade
     }
 
-    class Estoque {
-        Lote lote
-        FloatField quantidade
-        Prateleira prateleira
-
-        adcionar(quant)
-        subtrair(quant)
-    }
-
-    Estoque *- Lote   
-    Estoque *-- Prateleira 
+    class CentroLucro
+    
+    Produto *--CentroLucro
     Produto *-- Marca  
-    Lote *- Produto
-    Prateleira *-- Categoria
-    Produto *-- Categoria  
+    Produto *- Categoria  
     Marca *-- Fabricante
     Fabricante *- Cidade
 }
