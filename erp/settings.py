@@ -10,11 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
-import os, sys
+import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-APP_DIR  = os.path.join(BASE_DIR, "apps")
+APP_DIR = os.path.join(BASE_DIR, "apps")
 
 sys.path.insert(0, APP_DIR)
 
@@ -33,19 +34,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 DJANGO_APPS = [
-'django.contrib.admin',
-'django.contrib.auth',
-'django.contrib.contenttypes',
-'django.contrib.sessions',
-'django.contrib.messages',
-'django.contrib.staticfiles',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
 
-ERP_APPS =[
+ERP_APPS = [
     'util.apps.UtilConfig',
     'estoque.apps.EstoqueConfig',
     'teste.apps.TesteConfig',
-    
+
 ]
 
 INSTALLED_APPS = ERP_APPS + DJANGO_APPS
@@ -65,7 +66,9 @@ ROOT_URLCONF = 'erp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'statics/'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,7 +94,7 @@ DATABASES = {
     }
 }
 
-
+'''
 DATABASES = {
     'default': {
         'NAME': 'erp',
@@ -99,11 +102,11 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'olhaeu01',
         'OPTIONS': {
-          'autocommit': True,
+            'autocommit': True,
         },
     }
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 

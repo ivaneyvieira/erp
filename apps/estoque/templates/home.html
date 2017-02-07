@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+    <ul>
+        {% for p in prods%}
+            <li>{{p.codigo}} {{p.nome}}</li>
+        {% endfor%}
+    </ul>
+
+{% endblock %}
+<p>
+    {% lorem 50  %}
+    </p>
