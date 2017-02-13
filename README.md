@@ -11,3 +11,4 @@ modelo@1-141
 Links para pequisar
 ===================
 * https://docs.djangoproject.com/en/1.10/ref/class-based-views/generic-editing/
+* https://docs.djangoproject.com/pt-br/1.10/topics/class-based-views/generic-editing/
